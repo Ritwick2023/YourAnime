@@ -2,6 +2,13 @@ body {
     font-family: Arial;
     margin: 20px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input {
@@ -23,11 +30,34 @@ button {
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     padding: 10px;
     width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 100%;
+    border-radius: 10px;
+}
+
+/* 🌞 Light Mode */
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark .card {
+    border: 1px solid #444;
 }
